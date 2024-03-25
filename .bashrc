@@ -8,3 +8,8 @@ alias :q="exit"
 alias qq="exit"
 
 bind -s 'set completion-ignore-case on' &> /dev/null
+
+# Use vim instead of vi, but only if we have vim installed
+if command -v vim &> /dev/null; then
+		alias vi="vim"
+fi
