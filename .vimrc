@@ -33,8 +33,8 @@ set undolevels=1000             " Number of undo levels
 set backspace=indent,eol,start  " Backspace behaviour
 
 " Keybinds!
-map r :redo<cr>                 " Normal mode | r -> Redo
-map qq :q<cr>                   " Normal mode | qq -> :q
+map r :redo<cr>                 " Normal mode   r -> Redo
+map qq :q<cr>                   " Normal mode   qq -> :q
 
-map! <C-s> <cmd>:w<cr>          " Insert mode | Ctrl+s -> :w
-map <C-s> :w<cr>                " Normal mode | Ctrl+S -> :w
+map! <C-s> <cmd>:w<cr>          " Insert mode   Ctrl+s -> :w
+map <C-s> :w<cr>                " Normal mode   Ctrl+S -> :w
