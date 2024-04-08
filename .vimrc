@@ -47,8 +47,8 @@ map r :redo<cr>
 map qq :q<cr>
 
                                              
-map! <C-s> <cmd>:w<cr>|						                " Insert mode   Ctrl+s -> :w
-map <C-s> :w<cr>|          					             " Normal mode   Ctrl+S -> :w
+map! <C-s> <cmd>:w<cr>|                      " Insert mode   Ctrl+s -> :w
+map <C-s> :w<cr>|                            " Normal mode   Ctrl+S -> :w
 nnoremap <leader><space> :nohlsearch<CR>|    " Normal mode?  Unhighlight searches
 nnoremap <space> za|                         " Normal mode?  Toggle fold
 
