@@ -48,8 +48,10 @@ map qq :q<cr>|                               " Normal mode   qq -> :q
 map! <C-s> <cmd>:w<cr>|                      " Insert mode   Ctrl+s -> :w
 map <C-s> :w<cr>|                            " Normal mode   Ctrl+S -> :w
 
-nnoremap <leader><space> :nohlsearch<CR>|    " Normal mode?  Unhighlight searches
-nnoremap <space> za|                         " Normal mode?  Toggle fold
+nnoremap <leader><space> :nohlsearch<CR>|    " Normal mode   Unhighlight searches
+nnoremap <space> za|                         " Normal mode   Toggle fold
+
+nnoremap b <C-v>|                            " Normal mode   Open visual block mode
 
 " VimConfig.com is pretty good :)
 " Thanks to https://web.archive.org/web/20161224112739/https://dougblack.io/words/a-good-vimrc.html#colors
