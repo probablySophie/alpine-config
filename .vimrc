@@ -41,7 +41,11 @@ set foldmethod=indent                        " Fold based on indentation pls
 set wildmenu                                 " Autocomplete for commands apparently
 
 " Keybinds!
-                                             
+
+map ff :fold<cr>
+map fo :foldopen<cr>
+map fc :foldclose<cr>
+
 map r :redo<cr>|                             " Normal mode   r -> Redo
 map qq :q<cr>|                               " Normal mode   qq -> :q
                                              
@@ -49,7 +53,6 @@ map! <C-s> <cmd>:w<cr>|                      " Insert mode   Ctrl+s -> :w
 map <C-s> :w<cr>|                            " Normal mode   Ctrl+S -> :w
 
 nnoremap <leader><space> :nohlsearch<CR>|    " Normal mode   Unhighlight searches
-nnoremap <space> za|                         " Normal mode   Toggle fold
 
 nnoremap b <C-v>|                            " Normal mode   Open visual block mode
 
