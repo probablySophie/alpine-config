@@ -6,6 +6,8 @@ set encoding=utf-8                           " Encoding
 
 set laststatus=1                             " Status bar
 
+let mapleader = " "
+
 " General
 set number                                   " Show line numbers
 set linebreak                                " Break lines at word (requires Wrap lines)
@@ -42,6 +44,8 @@ set wildmenu                                 " Autocomplete for commands apparen
 
 " Keybinds!
 
+nnoremap <leader>qq :qa<cr>|          " Quit All
+
 map ff :fold<cr>
 map fo :foldopen<cr>
 map fc :foldclose<cr>
@@ -56,5 +60,23 @@ nnoremap <leader><space> :nohlsearch<CR>|    " Normal mode   Unhighlight searche
 
 nnoremap b <C-v>|                            " Normal mode   Open visual block mode
 
+" Tabs!  So many tabs!
+nnoremap <Tab><Right> :tabnext<cr>
+nnoremap <Tab><Left> :tabprevious<cr>
+nnoremap <Tab>x :tabclose<cr>
+nnoremap <Tab>n :tabnew<cr>
+
+" Quick swap between tabs
+nnoremap <Tab>1 1gt
+nnoremap <Tab>2 2gt
+nnoremap <Tab>3 3gt
+nnoremap <Tab>4 4gt
+nnoremap <Tab>5 5gt
+nnoremap <Tab>6 6gt
+nnoremap <Tab>7 7gt
+nnoremap <Tab>8 8gt
+nnoremap <Tab>9 9gt
+
 " VimConfig.com is pretty good :)
 " Thanks to https://web.archive.org/web/20161224112739/https://dougblack.io/words/a-good-vimrc.html#colors
+
